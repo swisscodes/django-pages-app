@@ -26,7 +26,7 @@ SECRET_KEY = 'jbs!*8r(&wgr1bjb8$nsmmui5(aiweos^5!@pqp#29e-ckp^60'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     # My installed apps starts here #
     'pages', #1
-    
+
 ]
 
 MIDDLEWARE = [
