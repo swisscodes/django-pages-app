@@ -1,10 +1,10 @@
 # pages url patterns goes here
 from django.urls import path
-from .views import HomePageView, AboutPage
+from .views import PagesView, BlogListView
 
 app_name = 'pages'
 
 urlpatterns = [
-    path('', HomePageView.as_view(), name="home"),
-    path('about/', AboutPage.as_view(), name="about"),
+    path('', BlogListView.as_view(), name="home"),
+    path('pages/<int:pk>/', PagesView.as_view(), name="detail"),
 ]
