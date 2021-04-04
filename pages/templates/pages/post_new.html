@@ -1,0 +1,11 @@
+<!-- templates/post_new.html -->
+{% extends 'pages/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form action="" method="post">{% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Save">
+    </form>
+    <a href="{% url "pages:home" %}">Cancel</a>
+{% endblock content %}
